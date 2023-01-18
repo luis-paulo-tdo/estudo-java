@@ -27,3 +27,17 @@ Para cada tópico de Java e Orientação a Objetos que for tratado, haverão qua
 Para cada projeto que for construído ao longo do curso, haverão três recursos disponibilizados: as videoaulas que explicam os conceitos que serão aplicados no desenvolvimento de cada funcionalidade do projeto, o material de apoio em PDF contendo todas as especificações descritas para a funcionalidade que estará sendo implementada e o GitHub do projeto que contém todo o código construído e onde cada commit presente nele corresponde a uma implementação feita em uma das videoaulas. 
 
 As ferramentas que utilizadas no curso serão as IDEs Eclipse para o desenvolvimento com Java e o Spring Tool Suite para o desenvolvimento das aplicações com Spring Boot. Como IDEs alternativas, podem ser usadas a IntelliJ e a NetBeans. 
+
+-----
+
+2. Conceitos de Programação
+
+Este capítulo é mais voltado para os iniciantes que nunca programaram, pois ele explica o que é programação, o que é algoritmos, compiladores, interpretadores e máquina virtual. 
+
+
+2.1. Algoritmo, Automação, Programa de Computador
+
+Algoritmo: Sequência finita de instruções para se resolver um problema.
+Automação: Uso de máquinas para executar o procedimento desejado de forma automática ou semi-automática.
+Programa de Computador: Algoritmo que é executado pelo Computador.
+Computador: Máquina que automatiza a execução de Algoritmos.
