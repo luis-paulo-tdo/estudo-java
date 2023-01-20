@@ -48,3 +48,10 @@
 	2. IDE: Software usado para editar e testar um programa.
 	3. Compilador: Software para transformar código-fonte em código-objeto.
 	4. Gerador de Código ou Máquina Virtual: Software que permite que o programa seja executado.
+
+2.3. Linguagem de Programação, Léxica e Sintática
+
+	- Léxica diz respeito à ortografia. À correção das palavras isoladas.
+	- Sintática diz respeito à gramática. À correção das sentenças.
+	- Existem várias linguagens de programação (C, C++, Java, Ruby, Python, etc.)
+		- Cada linguagem tem a sua própria léxica e sintática.
