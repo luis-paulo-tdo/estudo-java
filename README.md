@@ -69,3 +69,19 @@
 		- Construção do produto final (build)
 		- Sugestão de modelos (templates)
 		- Auxiliar em várias tarefas do projeto
+
+2.5. Compilação, Interpretação, Código-fonte, Código-objeto e Máquina Virtual
+
+	Compilação: Transformação do código-fonte em código-objeto, que será transformado em um executável por meio de um build feito por um gerador de código.
+		- O compilador faz uma análise léxica e sintática do código antes da compilação.
+	
+	Interpretação: Análise e execução do código são feitas sob demanda.
+		- O interpretador não precisa transformar o código-fonte em código-objeto.
+	
+	Abordagem Híbrida: Compilação do código-fonte em Bytecode, que é interpretado por uma Máquina Virtual.
+		- A abordagem híbrida usa o melhor dos dois mundos.
+		
+	Vantagens:
+		Compilação: Mais desempenho e auxílio do compilador antes a execução.
+		Interpretação: Manutenção rápida e portabilidade.
+		Abordagem Híbrida: Auxílio do compilador e portabilidade.
