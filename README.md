@@ -55,3 +55,17 @@
 	- Sintática diz respeito à gramática. À correção das sentenças.
 	- Existem várias linguagens de programação (C, C++, Java, Ruby, Python, etc.)
 		- Cada linguagem tem a sua própria léxica e sintática.
+		
+2.4. IDE - Ambiente Integrado de Desenvolvimento
+
+	- É um conjunto de softwares usado para a construção de programas
+		- C/C++: Codeblocks
+		- C#: Microsoft Visual Studio
+		- Java: Eclipse/NetBeans
+		
+	- Funcionalidades
+		- Edição de código-fonte
+		- Depuração e testes
+		- Construção do produto final (build)
+		- Sugestão de modelos (templates)
+		- Auxiliar em várias tarefas do projeto
