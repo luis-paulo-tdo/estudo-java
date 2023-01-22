@@ -85,3 +85,14 @@
 		Compilação: Mais desempenho e auxílio do compilador antes a execução.
 		Interpretação: Manutenção rápida e portabilidade.
 		Abordagem Híbrida: Auxílio do compilador e portabilidade.
+
+-----
+
+3. Introdução à Linguagem Java
+
+	Este capítulo apresenta conceitos básicos, entendimento das versões, documentação, ferramentas iniciais para desenvolvimento, explicações sobre a Máquina Virtual Java e a estrutura de aplicação em Java.
+	
+3.1. Entendendo as Versões
+
+	Java SE significa Java Standard Edition.
+	O Java tem uma versão LTS (Long Term Support) que é mantida por períodos mais longos. Entre uma versão LTS e outra, versões mais curtas são lançadas. Quando uma nova LTS é lançada, todas as suas versões curtas anteriores perdem o suporte e a disponibilidade para download.
