@@ -96,3 +96,29 @@
 
 	Java SE significa Java Standard Edition.
 	O Java tem uma versão LTS (Long Term Support) que é mantida por períodos mais longos. Entre uma versão LTS e outra, versões mais curtas são lançadas. Quando uma nova LTS é lançada, todas as suas versões curtas anteriores perdem o suporte e a disponibilidade para download.
+	
+3.2. Histórico e edições do Java
+
+	Além de ser uma linguagem de programação, o Java é uma plataforma de desenvolvimento e execução que oferece tanto uma vasta bibliotecas de funcionalidades - as APIs - quanto ambientes de execução sobre os quais as aplicações são construídas.
+	
+	Histórico:
+		-> Criada pela Sun Microsystem em meados da década de 1990 para resolver os seguintes problemas:
+			- Ponteiros e gerenciamento de memória, que causavam complexibilidade na manutenibilidade e favoreciam o surgimento de bugs, como o C++.
+			- Portabilidade, visto que era necessário reescrever o código por cada Sistema Operacional para o qual as aplicações eram desenvolvidas.
+			- Utilização da linguagem em dispositivos diversos.
+			- Custos.
+		-> Em 2010, a plataforma foi adquirida pela Oracle.
+		
+	Dentre os aspectos notáveis do Java, estão os seguintes itens:
+		-> Usa a abordagem híbrida de compilação. Ou seja, o código-fonte é compilado em Bytecode e interpretado pela Máquina Virtual Java (JVM).
+		-> Portável, segura e robusta.
+		-> Executa em vários tipos de dispositivos.
+		-> Domina o mercado corporativo desde o fim do Século 20.
+		-> Foi padrão Android por muitos anos antes do Kotlin.
+		
+	Edições:
+		-> Java ME (Micro Edition) - Usada para sistemas embarcados, dispositivos mobile e aplicada em IoT (Internet of Things).
+		-> Java SE (Standard Edition) - Edição padrão que apresenta as funcionalidade que compõem o núcleo (Core) do Java. Mais usada em aplicações Desktop e Servidores.
+		-> Java EE (Enterprise Edition) - Voltada para ambientes corporativos. Usada para desenvolver sistemas comerciais, geralmente compostos por Web Servers e Web APIs.
+			- Servlet: Especificação de requisições de servidor.
+			- Java Persistence API (JPA): Especificação para bibliotecas de acesso a dados via Mapeamento Objeto-Relacional (ORM).
