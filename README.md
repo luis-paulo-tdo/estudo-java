@@ -122,3 +122,15 @@
 		-> Java EE (Enterprise Edition) - Voltada para ambientes corporativos. Usada para desenvolver sistemas comerciais, geralmente compostos por Web Servers e Web APIs.
 			- Servlet: Especificação de requisições de servidor.
 			- Java Persistence API (JPA): Especificação para bibliotecas de acesso a dados via Mapeamento Objeto-Relacional (ORM).
+
+3.3. JDK / JVM - Máquina Virtual Java
+	
+	A JVM (Java Virtual Machine) é necessária para executar sistemas em Java, devendo ser instalada na máquina do cliente antes do processo de implantação.
+
+	É um elemento importante na abordagem de construção dos sistemas a partir do código, uma vez que este segue o modelo híbrido:
+		1. Código Java é compilado para ByteCode.
+		2. ByteCode é interpretado pela Máquina Virtual.
+
+	Com isso, a linguagem Java extrai o melhor dos mundos tanto da compilação quanto da interpretação:
+		-> Por meio da pré-compilação, é gerado um código sem erros de sintaxe com o auxílio do compilador.
+		-> O ByteCode gerado pode ser interpretado em qualquer sistema, desde que tenha a Máquina Virtual Java instalada.
