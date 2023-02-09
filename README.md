@@ -142,3 +142,8 @@
 	-> A partir do Java 9 em diante, há a possibilidade de agrupar os Pacotes relacionados em Módulos.
 	-> Build ou Runtime é o agrupamento físico de todo código Java compilado, sendo gerados pelo compilador na forma de arquivos.
 	-> Aplicação é o agrupamento dos Módulos relacionados.
+	
+3.5. Instalando o Eclipse
+	
+	1. Escolher a opção Eclipse IDE for Enterprise Java Developers.
+	2. Ao abrir o Eclipse, selecionar o Workspace, que é a pasta onde os projetos serão armazenados.
