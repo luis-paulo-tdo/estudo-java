@@ -164,3 +164,21 @@
 4. Estrutura Sequencial
 
 	Este capítulo apresenta conceitos básicos de linguagem de programação, como expressões aritméticas, variáveis, entrada, processamento e saída de dados em Java.
+	
+4.1. Expressões Aritméticas
+
+	-> São expressões que quando calculadas, resultam num valor numérico.
+	-> Utilizam cinco operadores aritméticos: Soma, subtração, multiplicação, divisão e resto da divisão (mod)
+	
+4.2. Variáveis e Tipos Básicos em Java
+
+	-> Os dados processados por programas de computador são armazanados em variáveis.
+	-> Variável é uma porção de memória no computador.
+	-> Para usar Variáveis, é necessário declará-las.
+	-> O Java possui oito tipos primitivos de Variáveis:
+		- Quatro numéricos: byte, short, int e long.
+		- Dois flutuantes: float e double.
+		- Tipo caractere: char.
+		- Tipo booleano: boolean.
+	-> Além disso, existe o tipo String, que embora não seja primitivo, tem a função principal de armazenar textos.
+	
