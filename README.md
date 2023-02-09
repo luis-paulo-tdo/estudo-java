@@ -158,3 +158,9 @@
 	6. Dentro do Projeto, a pasta "src" (source) é onde o código será armazenado.
 	7. Criar uma Classe Java dentro da pasta "src".
 	8. Executar o Programa (Mouse Direito no Arquivo -> Run As -> Java Application).
+
+-----
+
+4. Estrutura Sequencial
+
+	Este capítulo apresenta conceitos básicos de linguagem de programação, como expressões aritméticas, variáveis, entrada, processamento e saída de dados em Java.
