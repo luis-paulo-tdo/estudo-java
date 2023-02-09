@@ -13,11 +13,49 @@ public class Main {
 		double altura = 1.7145;
 		String nome = "Luis Paulo";
 		
-		System.out.println("Bom dia!");
+		System.out.printf("Bom dia!%n%n");
 		
+		// Exemplos Saída de Dados
+		
+		System.out.println("4.4. Saída de Dados em Java:");
 		System.out.println("Agora são " + numero1 + " horas.");
-		System.out.printf("A temperatura de hoje em é %.2fCº.%n", decimal1);
-		System.out.printf("Neste ano, %s, você completou %d anos. Sua altura passou para %.2f.%n", nome, idade, altura);
+		System.out.printf("A temperatura de hoje em é %.2f Graus Celsius.%n", decimal1);
+		System.out.printf("Neste ano, %s, você completou %d anos. Sua altura passou para %.2f.%n%n", nome, idade, altura);
+		
+		// Exemplos de Processamento de Dados
+		
+		int numero2;
+		double decimal2;
+		
+		numero2 = 5;
+		decimal2 = 2 * numero2;
+		
+		double baseMenor, baseMaior, alturaTrapezio, area;
+		
+		baseMenor = 6.0;
+		baseMaior = 8.0;
+		alturaTrapezio = 5.0;
+		area = (baseMenor + baseMaior) / 2.0 * alturaTrapezio;
+		
+		int numero3, numero4;
+		double resultado1;
+		
+		numero3 = 5;
+		numero4 = 2;
+		resultado1 = (double) numero3 / numero4;
+		
+		double decimal3;
+		int numero5;
+		
+		decimal3 = 5.0;
+		numero5 = (int) decimal3;
+		
+		System.out.println("4.5. Processamento de Dados em Java e Casting:");
+		System.out.println("O valor do numero2 é: " + numero2);
+		System.out.printf("O valor do numero3 é: %.1f%n", decimal2);
+		System.out.printf("A área do trapézio é: %.1f%n", area);
+		System.out.printf("A divisão de numero3 por numero4 é: %.1f%n", resultado1);
+		System.out.printf("O valor de numero5 é: %d%n%n", numero5);
 		
 		System.out.println("Até logo!");
 	}
