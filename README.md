@@ -134,3 +134,11 @@
 	Com isso, a linguagem Java extrai o melhor dos mundos tanto da compilação quanto da interpretação:
 		-> Por meio da pré-compilação, é gerado um código sem erros de sintaxe com o auxílio do compilador.
 		-> O ByteCode gerado pode ser interpretado em qualquer sistema, desde que tenha a Máquina Virtual Java instalada.
+		
+3.4. Estrutura de uma Aplicação Java
+
+	-> Java é uma linguagem orientada a objetos, logo, sua unidade lógica básica é a Classe. Isto significa dizer que todo o seu código se encontra dentro de Classes.
+	-> Classes que são relacionadas são agrupadas em Pacotes (Packages).
+	-> A partir do Java 9 em diante, há a possibilidade de agrupar os Pacotes relacionados em Módulos.
+	-> Build ou Runtime é o agrupamento físico de todo código Java compilado, sendo gerados pelo compilador na forma de arquivos.
+	-> Aplicação é o agrupamento dos Módulos relacionados.
