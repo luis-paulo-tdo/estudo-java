@@ -181,4 +181,9 @@
 		- Tipo caractere: char.
 		- Tipo booleano: boolean.
 	-> Além disso, existe o tipo String, que embora não seja primitivo, tem a função principal de armazenar textos.
-	
+
+4.3. As três operações básicas de programação
+
+	-> Entrada de Dados: Usuário fornece dados ao Programa, que pode armazená-los em Variáveis.
+	-> Processamento de Dados: Programa realiza cálculos e novas atribuições através das Variáveis com os dados fornecidos pela Entrada.
+	-> Saída de Dados: Programa exibe dados ao Usuário.
