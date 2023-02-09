@@ -147,3 +147,14 @@
 	
 	1. Escolher a opção Eclipse IDE for Enterprise Java Developers.
 	2. Ao abrir o Eclipse, selecionar o Workspace, que é a pasta onde os projetos serão armazenados.
+	
+3.6. Primeiro Programa em Java no Eclipse
+
+	1. Ao abrir o Eclipse, selecionar o Workspace que foi criado.
+	2. Alterar o layout para a perspectiva apropriada para o Java Desktop (Window -> Perspective -> Open Perspective -> Java).
+	3. Caso alguma janela seja fechada, é possível zerar o layout (Window -> Perspective -> Reset Perspective).
+	4. Exibir a aba Console, que embora não faça parte da perspectiva do Java, é importante para acompanhar a sua execução (Window -> Show View -> Console).
+	5. Criar o primeiro Projeto (File -> New -> Java Project), atribuíndo um nome a ele.
+	6. Dentro do Projeto, a pasta "src" (source) é onde o código será armazenado.
+	7. Criar uma Classe Java dentro da pasta "src".
+	8. Executar o Programa (Mouse Direito no Arquivo -> Run As -> Java Application).
