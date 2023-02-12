@@ -64,7 +64,7 @@ public class Main {
 		int numero6;
 		char caractere1;
 		
-		System.out.println("4.6. Entrada de Dados em Java:");
+		System.out.println("4.6. Entrada de Dados em Java - Parte 1:");
 		System.out.print("Digite um texto: ");
 		entrada = sc.next();
 		System.out.printf("Texto: [%s]%n", entrada);
@@ -77,6 +77,20 @@ public class Main {
 		System.out.print("Agora digite um caractere: ");
 		caractere1 = sc.next().charAt(0);
 		System.out.printf("Caractere: [%c]%n%n", caractere1);
+		
+		String texto1, texto2, texto3;
+		
+		System.out.println("4.7. Entrada de Dados em Java - Parte 2:");
+		System.out.println("Digite um texto de três linhas:");
+		sc.nextLine();
+		texto1 = sc.nextLine();
+		texto2 = sc.nextLine();
+		texto3 = sc.nextLine();
+		
+		System.out.printf("%nTexto:%n");
+		System.out.println(texto1);
+		System.out.println(texto2);
+		System.out.printf("%s%n%n", texto3);
 		
 		sc.close();
 		
