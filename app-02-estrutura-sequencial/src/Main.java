@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
@@ -56,6 +57,28 @@ public class Main {
 		System.out.printf("A área do trapézio é: %.1f%n", area);
 		System.out.printf("A divisão de numero3 por numero4 é: %.1f%n", resultado1);
 		System.out.printf("O valor de numero5 é: %d%n%n", numero5);
+		
+		Scanner sc = new Scanner(System.in);
+		String entrada;
+		double decimal4;
+		int numero6;
+		char caractere1;
+		
+		System.out.println("4.6. Entrada de Dados em Java:");
+		System.out.print("Digite um texto: ");
+		entrada = sc.next();
+		System.out.printf("Texto: [%s]%n", entrada);
+		System.out.print("Agora digite um número: ");
+		numero6 = sc.nextInt();
+		System.out.printf("Número: [%d]%n", numero6);
+		System.out.print("Agora digite um decimal: ");
+		decimal4 = sc.nextDouble();
+		System.out.printf("Decimal: [%.2f]%n", decimal4);
+		System.out.print("Agora digite um caractere: ");
+		caractere1 = sc.next().charAt(0);
+		System.out.printf("Caractere: [%c]%n%n", caractere1);
+		
+		sc.close();
 		
 		System.out.println("Até logo!");
 	}
