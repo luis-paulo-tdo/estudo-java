@@ -92,6 +92,34 @@ public class Main {
 		System.out.println(texto2);
 		System.out.printf("%s%n%n", texto3);
 		
+		double decimal5 = 3.0;
+		double decimal6 = 4.0;
+		double decimal7 = -5.0;
+		double resultado2, resultado3, resultado4;
+		
+		System.out.println("4.8. Funções Matemáticas em Java:");
+		resultado2 = Math.sqrt(decimal5);
+		resultado3 = Math.sqrt(decimal6);
+		resultado4 = Math.sqrt(25.0);
+		System.out.println("[Raiz Quadrada]");
+		System.out.println("Raiz quadrada de " + decimal5 + " = " + resultado2);
+		System.out.println("Raiz quadrada de " + decimal6 + " = " + resultado3);
+		System.out.printf("Raiz quadrada de 25 = %.1f%n%n",resultado4);
+		
+		resultado2 = Math.pow(decimal5, decimal6);
+		resultado3 = Math.pow(decimal5, 2.0);
+		resultado4 = Math.pow(5.0, 2.0);
+		System.out.println("[Potência]");
+		System.out.println(decimal5 + " elevado a " + decimal6 + " = " + resultado2);
+		System.out.println(decimal5 + " elevado ao quadrado = " + resultado3);
+		System.out.printf("5 elevado ao quadrado = %.1f%n%n", resultado4);
+		
+		resultado2 = Math.abs(decimal6);
+		resultado3 = Math.abs(decimal7);
+		System.out.println("[Valor Absoluto]");
+		System.out.println("Valor absoluto de " + decimal6 + " = " + resultado2);
+		System.out.printf("Valor absoluto de %.1f = %.1f%n%n", decimal7, resultado3);
+		
 		sc.close();
 		
 		System.out.println("Até logo!");
