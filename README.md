@@ -203,7 +203,7 @@
 		- Maior ou igual à (>=)
 		- Menor ou igual à (<=)
 
-5. Expressões Lógicas
+5.2. Expressões Lógicas
 
 	-> Também visam comparar uma coisa com a outra, gerando um valor verdade.
 	-> Geralmente, utiliza-se três principais operadores:
@@ -216,3 +216,10 @@
 		- Obtém o valor verdadeiro se pelo menos uma das condições for verdadeira.
 	-> Operador "Não"
 		- Só obtém o valor verdadeiro se a condição não for verdadeira.
+
+5.3. Estrutura Condicional (if-else)
+
+	-> É uma estrutura de controle.
+	-> Permite definir a execução de um certo bloco de comandos de forma direcionada.
+	-> A execução do bloco só ocorrerá dependendo de uma condição.
+	-> É possível encadear estruturas condicionais.
