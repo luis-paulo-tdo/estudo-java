@@ -188,7 +188,11 @@
 	-> Processamento de Dados: Programa realiza cálculos e novas atribuições através das Variáveis com os dados fornecidos pela Entrada.
 	-> Saída de Dados: Programa exibe dados ao Usuário.
 
-4.4. Expressões Comparativas
+-----
+
+5. Estrutura Condicional 
+
+5.1. Expressões Comparativas
 
 	-> Visam comparar uma coisa com a outra, gerando um valor verdade.
 	-> Geralmente, existem seis operadores comparativos na programação:
@@ -198,3 +202,17 @@
 		- Menor que (<)
 		- Maior ou igual à (>=)
 		- Menor ou igual à (<=)
+
+5. Expressões Lógicas
+
+	-> Também visam comparar uma coisa com a outra, gerando um valor verdade.
+	-> Geralmente, utiliza-se três principais operadores:
+		- E (&&)
+		- OU (||)
+		- Não (!)
+	-> Operador "E"
+		- Só obtém o valor verdadeiro caso todas as condições seja verdadeira.
+	-> Operador "OU"
+		- Obtém o valor verdadeiro se pelo menos uma das condições for verdadeira.
+	-> Operador "Não"
+		- Só obtém o valor verdadeiro se a condição não for verdadeira.
