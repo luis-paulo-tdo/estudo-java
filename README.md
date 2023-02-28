@@ -187,3 +187,14 @@
 	-> Entrada de Dados: Usuário fornece dados ao Programa, que pode armazená-los em Variáveis.
 	-> Processamento de Dados: Programa realiza cálculos e novas atribuições através das Variáveis com os dados fornecidos pela Entrada.
 	-> Saída de Dados: Programa exibe dados ao Usuário.
+
+4.4. Expressões Comparativas
+
+	-> Visam comparar uma coisa com a outra, gerando um valor verdade.
+	-> Geralmente, existem seis operadores comparativos na programação:
+		- Igual à (==)
+		- Diferente de (!=)
+		- Maior que (>)
+		- Menor que (<)
+		- Maior ou igual à (>=)
+		- Menor ou igual à (<=)
