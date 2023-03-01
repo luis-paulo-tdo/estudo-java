@@ -27,6 +27,7 @@ public class Main {
 		System.out.printf("%n");
 		
 		// Operadores de Atribuição Cumulativos
+		
 		System.out.println("Quantos minutos você consumiu em sua ligação?");
 		int minutos = scanner.nextInt();
 		double conta = 50.0;
@@ -36,6 +37,42 @@ public class Main {
 		}
 		
 		System.out.printf("%nValor da conta = R$ %.2f%n", conta);
+		
+		// Estrutura Condicional Switch-Case
+		
+		System.out.println("Que dia da semana é hoje?");
+		int dia = scanner.nextInt();
+		String resultado;
+		
+		switch (dia) {
+		case 1:
+			resultado = "Domingo";
+			break;
+		case 2:
+			resultado = "Segunda";
+			break;
+		case 3:
+			resultado = "Terça";
+			break;
+		case 4:
+			resultado = "Quarta";
+			break;
+		case 5:
+			resultado = "Quinta";
+			break;
+		case 6:
+			resultado = "Sexta";
+			break;
+		case 7:
+			resultado = "Sábado";
+			break;
+		default:
+			resultado = "Valor inválido";
+			break;
+		}
+		
+		System.out.printf("%nDia da semana: %s", resultado);
+		System.out.printf("%n");
 		
 		scanner.close();
 	}

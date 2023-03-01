@@ -232,3 +232,7 @@
 		- Multiplicação (*=)
 		- Divisão (/=)
 		- Mod (%=)
+
+5.5. Estrutura Condicional (Switch-Case)
+
+	-> Útil para quando se tem várias opções de fluxo.
