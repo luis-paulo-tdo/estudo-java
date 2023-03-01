@@ -236,3 +236,8 @@
 5.5. Estrutura Condicional (Switch-Case)
 
 	-> Útil para quando se tem várias opções de fluxo.
+	
+5.6. Expressão Condicional Ternária
+	
+	-> Alternativa ao If-Else quando se deseja atribuir um valor com base em uma condição.
+		- (Condição) ? Valor Verdadeiro : Valor Falso
