@@ -223,3 +223,12 @@
 	-> Permite definir a execução de um certo bloco de comandos de forma direcionada.
 	-> A execução do bloco só ocorrerá dependendo de uma condição.
 	-> É possível encadear estruturas condicionais.
+
+5.4. Operadores de Atribuição Cumulativa
+
+	-> É uma forma abreviada de atribuir uma variável o valor de uma operação na qual ela está envolvida:
+		- Soma (+=)
+		- Subtração (-=)
+		- Multiplicação (*=)
+		- Divisão (/=)
+		- Mod (%=)
