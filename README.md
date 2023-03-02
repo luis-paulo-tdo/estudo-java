@@ -241,3 +241,12 @@
 	
 	-> Alternativa ao If-Else quando se deseja atribuir um valor com base em uma condição.
 		- (Condição) ? Valor Verdadeiro : Valor Falso
+
+5.7. Escopo e Inicialização
+
+	-> Escopo: Região do programa onde a variável é válida, podendo assim ser referenciada.
+	-> Uma variável se torna válida dentro de um escopo quando ela é declarada.
+	-> No Java, uma variável declarada só pode ser usada se ela for inicializada.
+	-> Caso a variável seja declarada em um bloco If ou Else, ela será inválida fora deste bloco.
+	-> Caso a variável seja declarada fora de um bloco If-Else, ela será válida dentro deste bloco.
+	

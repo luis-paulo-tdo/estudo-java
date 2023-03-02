@@ -75,6 +75,7 @@ public class Main {
 		System.out.printf("%n");
 		
 		// Expressão Condicional Ternária
+		
 		String tipoDia = (dia > 1 && dia < 7) ? "Dia de Trabalho" : "Dia de Descanso";
 		System.out.println(tipoDia);
 		
