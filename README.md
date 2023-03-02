@@ -249,4 +249,14 @@
 	-> No Java, uma variável declarada só pode ser usada se ela for inicializada.
 	-> Caso a variável seja declarada em um bloco If ou Else, ela será inválida fora deste bloco.
 	-> Caso a variável seja declarada fora de um bloco If-Else, ela será válida dentro deste bloco.
-	
+
+-----
+
+6. Estruturas Repetitivas
+
+6.1. Como utilizar o Debug no Eclipse
+
+	1. Marcar uma linha de Breakpoint;
+	2. Iniciar a aplicação em modo debug;
+	3. Executar as linhas apertando F6;
+	4. O debug pode ser interrompido na hora que quiser.
