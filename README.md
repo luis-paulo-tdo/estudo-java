@@ -260,3 +260,14 @@
 	2. Iniciar a aplicação em modo debug;
 	3. Executar as linhas apertando F6;
 	4. O debug pode ser interrompido na hora que quiser.
+
+6.2. Estrutura Repetitiva Enquanto (While)
+
+	-> Estrutura de controle que repete um bloco de comandos enquanto uma condição for verdadeira.
+	-> Usada quando não se sabe previamente a quantidade de repetições que será realizada.
+
+6.3. Teste de Mesa com Estrutura Repetitiva Enquanto
+
+	-> Consiste em acompanhar um trecho de código de um algoritmo de forma manual.
+	-> A cada linha de código observada, preenche-se as variáveis com os devidos valores.
+	-> Com isso, verifica-se o entendimento correto do algoritmo.
