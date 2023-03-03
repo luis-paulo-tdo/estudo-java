@@ -28,9 +28,10 @@ public class Main {
 		System.out.printf("Área = %.2f%n", area);
 		System.out.printf("Preço = %.2f%n%n", preco);
 		
+		
 		// Estrutura Repetitiva Enquanto (While)
 		
-		System.out.println("Calculadora de Soma. Digite uma sequência de números a serem somados. Ao final digite 0 para obter o resultado:");
+		System.out.println("Calculadora de Soma While. Digite uma sequência de números a serem somados. Ao final digite 0 para obter o resultado:");
 		int indexWhile = 1;
 		int somatorioWhile = 0;
 		
@@ -46,6 +47,22 @@ public class Main {
 		}
 		
 		System.out.printf("Soma Final = %d%n%n", somatorioWhile);
+		
+		
+		// Estrutura Repetitiva Para (For)
+		
+		System.out.println("Calculadora de Soma For.");
+		System.out.print("Digite a quantidade de números que serão usados na soma: ");
+		int repeticoesFor = scanner.nextInt();
+		int somatorioFor = 0;
+		
+		for (int indexFor = 1; indexFor <= repeticoesFor; ++indexFor) {
+			System.out.printf("Número %d: ", indexFor);
+			int numeroFor = scanner.nextInt();
+			somatorioFor += numeroFor;
+		}
+		
+		System.out.printf("Soma Final = %d%n%n", somatorioFor);
 		
 		scanner.close();
 	}

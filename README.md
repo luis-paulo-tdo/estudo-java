@@ -271,3 +271,9 @@
 	-> Consiste em acompanhar um trecho de código de um algoritmo de forma manual.
 	-> A cada linha de código observada, preenche-se as variáveis com os devidos valores.
 	-> Com isso, verifica-se o entendimento correto do algoritmo.
+	
+6.4. Estrutura Repetitiva Para (For)
+
+	-> Estrutura de controle que repete um bloco de comando para um certo intervalo de valores.
+	-> Usada quando se sabe previamente a quantidade de repetições que serão realizadas.
+	-> É a estrutura ideal para se fazer a contagem das iterações.
