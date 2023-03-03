@@ -7,6 +7,7 @@ public class Main {
 		
 		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
+
 		
 		// Código para demonstrar a utilização do debug no Eclipse
 		
@@ -63,6 +64,25 @@ public class Main {
 		}
 		
 		System.out.printf("Soma Final = %d%n%n", somatorioFor);
+		
+		
+		// Estrutura Repetitiva Faça-Enquanto (Do-While)
+		
+		char resposta;
+		
+		do {
+			System.out.println("Conversor de temperatura Celsius-Fahrenheit.");
+			System.out.print("Digite a temperatura em Celsius: ");
+			double temperaturaCelsius = scanner.nextDouble();
+			double temperaturaFahrenheit = 9 * temperaturaCelsius / 5 + 32;
+			
+			System.out.printf("Equivalente em Fahrenheit: %.2f%n", temperaturaFahrenheit);
+			
+			System.out.print("Deseja repetir? (s/n) ");
+			resposta = scanner.next().charAt(0);
+		} while(resposta == 's');
+		
+		System.out.printf("Conversor finalizado.%n%n");
 		
 		scanner.close();
 	}

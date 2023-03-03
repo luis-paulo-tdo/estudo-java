@@ -277,3 +277,9 @@
 	-> Estrutura de controle que repete um bloco de comando para um certo intervalo de valores.
 	-> Usada quando se sabe previamente a quantidade de repetições que serão realizadas.
 	-> É a estrutura ideal para se fazer a contagem das iterações.
+	
+6.5. Estrutura Repetitiva Faça-Enquanto (Do-While)
+
+	-> Menos utilizada, mas em alguns casos se encaixa melhor ao problema.
+	-> O bloco de comandos é executado pelo menos uma vez.
+	-> A condição só é verificada no fim.
