@@ -63,7 +63,39 @@ public class Main {
 		
 		System.out.printf("Manipulações de sentenças realizadas com sucesso!%n%n");
 		
+		// Funções
+		
+		double raizQuadradaFuncao = Math.sqrt(25);
+		
+		System.out.println("Vamos utilizar algumas Funções?");
+		System.out.printf("Cálculo da raiz quadrada de 25 com o Math.sqrt(25): %.2f%n%n", raizQuadradaFuncao);
+		
+		System.out.println("Dentre três números, vamos descobrir qual é o maior deles?");
+		int numeroFuncao1 = obterEntrada("Digite o primeiro número:", scanner);
+		int numeroFuncao2 = obterEntrada("Digite o segundo número:", scanner);
+		int numeroFuncao3 = obterEntrada("Digite o terceiro número:", scanner);
+		mostrarRetorno("Maior Número", maiorNumero(numeroFuncao1, numeroFuncao2, numeroFuncao3));
+		
 		scanner.close();
 	}
 
+	public static int obterEntrada(String prompt, Scanner scanner) {
+		System.out.print(prompt + " ");
+		return scanner.nextInt();
+	}
+	
+	public static int maiorNumero(int numero1, int numero2, int numero3) {
+		if (numero1 > numero2 && numero1 > numero3) {
+			return numero1;
+		}
+		else if (numero2 > numero3) {
+			return numero2;
+		}
+		
+		return numero3;
+	}
+	
+	public static void mostrarRetorno(String descricao, int resultado) {
+		System.out.println(descricao + ": " + resultado);
+	}
 }

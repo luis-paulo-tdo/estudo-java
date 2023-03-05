@@ -336,3 +336,19 @@
 	-> Os códigos serão ignorados pelo compilador.
 		- Marcador // (Comentário para uma única linha);
 		- Marcador /* */ (Comentário para muitas linhas).
+
+7.5. Funções (Sintaxe)
+
+	=> Representam um processamento que possui um significado.
+		-> Cálculo de Raíz Quadrada: Math.sqrt(double)
+		-> Impressão de String: System.out.println(string)
+	=> O Java possui muitas funções prontas para serem utilizadas.
+	=> Principais vantagens:
+		-> Modularização: Divisão bem definida do programa em módulos
+			- Cálculos matemáticos, manipulação de strings, etc.
+		-> Delegação: A Função criada passa a ser responsável por uma tarefa específica.
+			- O papel de calcular a raiz quadrada fica com a Função Math.sqrt(double).
+		-> Reaproveitamento: A Função pode ser usada em muitos outros lugares.
+	=> Podem ou não receber dados de entrada: Parâmetros ou Argumentos.
+	=> Podem ou não fornecer dados de saída: Retorno.
+	=> Em Orientação a Objetos, as Funções pertencentes às Classes chamam-se Métodos.
