@@ -298,3 +298,20 @@
 		- Segue o padrão camelCase.
 	-> Nome de Classes:
 		- Mesmos princípios que as Váriaveis, mas segue o padrão PascalCase.
+
+7.2. Operadores Bitwise
+
+	=> Operadores que realizam operações lógicas bit a bit em valores.
+	=> Os números da expressão são convertidos em binários para se obter o resultado.
+		-> Ex: 89 (0101 1001) e 60 (0011 1100)
+		-> Operador "E" Bit a Bit (&)
+			- Verdadeiro quando TODAS as clausulas forem verdadeiras.
+			- 89 & 60 = 24 (0001 1000)
+		-> Operador "OU" Bit a Bit (|)
+			- Verdadeiro quando PELO MENOS UMA das clausulas for verdadeira.
+			- 89 | 60 = 125 (0111 1101)
+		-> Operador "OU-Exclusivo" Bit a Bit (^)
+			- Verdadeiro quando SOMENTE UMA das clausulas for verdadeira.
+			- 89 ^ 60 = 101 (0110 0101)
+	=> São muito aplicáveis em programação de baixo nível:
+		-> Microcontroladores, Interfaces de Rede, Arduino, etc.
