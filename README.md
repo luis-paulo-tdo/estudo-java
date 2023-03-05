@@ -328,3 +328,11 @@
 		- indexOf(), lastIndexOf().
 	-> Separação:
 		- split(string).
+
+7.4. Comentários em Java
+
+	-> Auxilia no entendimento do código e das tarefas que ele utiliza.
+	-> Através de marcadores simples, é possível deixar textos no código.
+	-> Os códigos serão ignorados pelo compilador.
+		- Marcador // (Comentário para uma única linha);
+		- Marcador /* */ (Comentário para muitas linhas).
