@@ -315,3 +315,16 @@
 			- 89 ^ 60 = 101 (0110 0101)
 	=> São muito aplicáveis em programação de baixo nível:
 		-> Microcontroladores, Interfaces de Rede, Arduino, etc.
+
+7.3. Funções interessantes para String
+
+	-> Formatação:
+		- toLowerCase(), toUpperCase(), trim().
+	-> Recorte:
+		- substring(string), substring(string, string).
+	-> Substituição:
+		- replace(string, string).
+	-> Busca:
+		- indexOf(), lastIndexOf().
+	-> Separação:
+		- split(string).
