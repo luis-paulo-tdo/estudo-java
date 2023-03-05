@@ -352,3 +352,6 @@
 	=> Podem ou não receber dados de entrada: Parâmetros ou Argumentos.
 	=> Podem ou não fornecer dados de saída: Retorno.
 	=> Em Orientação a Objetos, as Funções pertencentes às Classes chamam-se Métodos.
+
+-----
+
