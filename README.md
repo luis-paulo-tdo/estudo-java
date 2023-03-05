@@ -283,3 +283,18 @@
 	-> Menos utilizada, mas em alguns casos se encaixa melhor ao problema.
 	-> O bloco de comandos é executado pelo menos uma vez.
 	-> A condição só é verificada no fim.
+
+-----
+
+7. Outros tópicos básicos sobre Java
+
+7.1. Restrições e convenções para nomes
+
+	-> Nomes de Variáveis:
+		- Não pode começar com dígito: Use uma letra ou o underscore (_);
+		- Não usar acentos;
+		- Não pode ter espaço em branco;
+		- Devem possuir algum significado;
+		- Segue o padrão camelCase.
+	-> Nome de Classes:
+		- Mesmos princípios que as Váriaveis, mas segue o padrão PascalCase.
