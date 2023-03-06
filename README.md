@@ -396,3 +396,8 @@
 	-> A Classe Triangle deve ter um Método para calcular a sua própria área:
 		- Afinal, este é um papel que pode ser delegado à ela (delegação de responsabilidades).
 		- Também, evita a repetição de código (reaproveitamento).
+		
+8.4. Começando a resolver um segundo problema exemplo
+
+	-> Criação de um programa para gerenciar estoque de produtos.
+	-> Uso da palavra "this" para referenciar atributos de uma classe dentro de seu próprio código.
