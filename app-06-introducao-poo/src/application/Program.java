@@ -31,22 +31,13 @@ public class Program {
 		System.out.print("Lado C: ");
 		triangulo2.ladoC = scanner.nextDouble();
 		
-		double triangulo1Semiperimetro = (triangulo1.ladoA + triangulo1.ladoB + triangulo1.ladoC) / 2.0;
-		double triangulo1Area = Math.sqrt(triangulo1Semiperimetro
-				* (triangulo1Semiperimetro - triangulo1.ladoA)
-				* (triangulo1Semiperimetro - triangulo1.ladoB)
-				* (triangulo1Semiperimetro - triangulo1.ladoC));
+		double areaTriangulo1 = triangulo1.area();
+		double areaTriangulo2 = triangulo2.area();
 		
-		double triangulo2Semiperimetro = (triangulo2.ladoA + triangulo2.ladoB + triangulo2.ladoC) / 2.0;
-		double triangulo2Area = Math.sqrt(triangulo2Semiperimetro
-				* (triangulo2Semiperimetro - triangulo2.ladoA)
-				* (triangulo2Semiperimetro - triangulo2.ladoB)
-				* (triangulo2Semiperimetro - triangulo2.ladoC));
+		System.out.printf("%nÁrea do Triângulo 1: %.4f%n", areaTriangulo1);
+		System.out.printf("Área do Triângulo 2: %.4f%n%n", areaTriangulo2);
 		
-		System.out.printf("%nÁrea do Triângulo 1: %.4f%n", triangulo1Area);
-		System.out.printf("Área do Triângulo 2: %.4f%n%n", triangulo2Area);
-		
-		if (triangulo1Area > triangulo2Area) {
+		if (areaTriangulo1 > areaTriangulo2) {
 			System.out.print("A Área do Triângulo 1 é maior.");
 		}
 		else {

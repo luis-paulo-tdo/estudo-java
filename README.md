@@ -390,3 +390,9 @@
 		- Stack: Onde são criadas as variáveis estáticas. Apenas a referência de Triangle é criada.
 		- Heap: Onde são criados os objetos dinâmicos. A referência de Triangle apontará para ela.
 	-> Classe define o tipo. Objeto define a instância.
+	
+8.3. Criando um método para obtermos os benefícios de reaproveitamento e delegação
+
+	-> A Classe Triangle deve ter um Método para calcular a sua própria área:
+		- Afinal, este é um papel que pode ser delegado à ela (delegação de responsabilidades).
+		- Também, evita a repetição de código (reaproveitamento).
