@@ -355,3 +355,38 @@
 
 -----
 
+8. Introdução à Programação Orientada a Objetos
+
+8.1. Resolvendo um problema sem Orientação a Objetos
+
+	-> Obter as três medidas de dois triângulos.
+	-> Calcular a área destes dois triângulos.
+	-> Definir qual triângulo tem a maior área.
+	
+8.2. Criando uma Classe com três atributos para representar melhor o Triângulo
+
+	-> Triângulo é uma entidade com três atributos: ladoA, ladoB e ladoC.
+	-> Atualmente, estamos usando variáveis soltas para referenciá-los (Ex: trianguloLadoA).
+	-> Para melhorar isso, representamos o Triângulo como uma Classe.
+	-> Classe é um tipo estruturado na programação que pode conter membros:
+		- Atributos (Dados / Campos)
+		- Métodos (Funções / Operações)
+	-> Elas TÊM e FAZEM algo.
+	-> Podem prover muitos outros recursos na programação:
+		- Construtores, sobrecargas , encapsulamento, herança e polimorfismo.
+	-> O que as Classes podem representar:
+		- Objetos do mundo real (Ex: Carro, Caixa Eletrônico).
+		- Entidades: Produto, Cliente, Triângulo.
+		- Serviços: ProdutoService, ClienteService.
+		- Controladores: ProdutoController, ClienteController.
+		- Utilitários: Calculadora, Compactador, Mediador.
+		- Outros (View, Repository, Manager, etc.).
+	-> No caso do Triângulo, três variáveis double se tornam apenas uma Triangle.
+	-> Os três atributos são referenciados através desta variável.
+	-> Para que a classe possa ser usada, ela deve ser instanciada:
+		- Isto é, ser transformada em objeto para ter seu espaço alocado na memória.
+		- Triangle triangle = new Triangle();
+	-> Em vez da Stack, seus dados serão armazenada em um Heap.
+		- Stack: Onde são criadas as variáveis estáticas. Apenas a referência de Triangle é criada.
+		- Heap: Onde são criados os objetos dinâmicos. A referência de Triangle apontará para ela.
+	-> Classe define o tipo. Objeto define a instância.
