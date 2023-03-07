@@ -19,8 +19,7 @@ public class Product {
 	}
 	
 	public String toString() {
-		return "Dados do Produto"
-				+ "\nNome: " + name
+		return "Nome: " + name
 				+ "\nPreço: R$" + price
 				+ "\nQuantidade: " + quantity;
 	}

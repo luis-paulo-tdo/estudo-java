@@ -31,7 +31,24 @@ public class Program {
 		System.out.print("Quantidade: ");
 		product.quantity = scanner.nextInt();
 		
-		System.out.println("\n" + product);
+		System.out.println();
+		System.out.println("Dados do Produto\n" + product);
+		
+		System.out.println();
+		System.out.print("Digite o número de produtos adicionados em estoque: ");
+		int quantity = scanner.nextInt();
+		product.addProducts(quantity);
+		
+		System.out.println();
+		System.out.println("Dados Atualizados do Produto\n" + product);
+		
+		System.out.println();
+		System.out.print("Digite o número de produtos para serem removidos do estoque: ");
+		quantity = scanner.nextInt();
+		product.removeProducts(quantity);
+		
+		System.out.println();
+		System.out.println("Dados Atualizados do Produto\n" + product);
 	}
 
 	public static void calcularAreaTriangulo(Scanner scanner) {
