@@ -401,3 +401,12 @@
 
 	-> Criação de um programa para gerenciar estoque de produtos.
 	-> Uso da palavra "this" para referenciar atributos de uma classe dentro de seu próprio código.
+	
+8.5. Classe Object e Método toString
+
+	-> Toda classe Java é uma subclasse da classe Object.
+	-> A Classe Object possui os seguintes métodos:
+		- getClass	Retorna o tipo do objeto.
+		- equals	Compara se um objeto é igual ao outro.
+		- hashCode	Retorna um código hash do objeto.
+		- toString	Converte o objeto para uma String.

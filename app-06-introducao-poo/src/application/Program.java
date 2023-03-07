@@ -31,10 +31,7 @@ public class Program {
 		System.out.print("Quantidade: ");
 		product.quantity = scanner.nextInt();
 		
-		System.out.println("\nDados do Produto");
-		System.out.println("Nome: " + product.name);
-		System.out.printf("Preço: R$%.2f%n", product.price);
-		System.out.println("Quantidade: " + product.quantity);
+		System.out.println("\n" + product);
 	}
 
 	public static void calcularAreaTriangulo(Scanner scanner) {

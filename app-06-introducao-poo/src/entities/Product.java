@@ -17,4 +17,11 @@ public class Product {
 	public void removeProducts(int quantity) {
 		this.quantity -= quantity;
 	}
+	
+	public String toString() {
+		return "Dados do Produto"
+				+ "\nNome: " + name
+				+ "\nPreço: R$" + price
+				+ "\nQuantidade: " + quantity;
+	}
 }
