@@ -410,3 +410,13 @@
 		- equals	Compara se um objeto é igual ao outro.
 		- hashCode	Retorna um código hash do objeto.
 		- toString	Converte o objeto para uma String.
+		
+8.6. Membros Estáticos
+
+	-> Também chamados de membros de Classe, em oposição aos membros de instância.
+	-> Não precisam de objetos para serem chamados, apenas da Classe.
+	-> Muito aplicado em Constantes e Classes Utilitárias.
+	-> Uma Classe que possui somente membros estáticos pode ser uma Classe Estática.
+	-> Uma Classe Estática não pode ser instanciada.
+	-> No Java, as constantes são declaradas com a palavra "final", indicando que ele não vai mudar.
+	-> Dentro de uma Classe Estática, não é possível chamar métodos que não sejam Estáticos.

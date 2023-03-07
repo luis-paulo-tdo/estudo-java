@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import entities.Product;
 import entities.Triangle;
+import util.Calculator;
 
 public class Program {
 
@@ -13,9 +14,25 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
 	
-		controlarEstoqueProduto(scanner);
+		criarEsfera(scanner);
 		
 		scanner.close();
+	}
+	
+	public static void criarEsfera(Scanner scanner) {
+		
+		Calculator calculator = new Calculator();
+		
+		System.out.println("Iniciando programa de criação de esferas a partir de um raio.");
+		System.out.print("Digite o número do raio: ");
+		double radius = scanner.nextDouble();
+		double circumference = calculator.circumference(radius);
+		double volume = calculator.volume(radius);
+		
+		System.out.println("\nMedidas da Esfera:");
+		System.out.printf("Circunferência: %.2f", circumference);
+		System.out.printf("\nVolume: %.2f", volume);
+		System.out.printf("\nPI: %.2f", calculator.PI);
 	}
 	
 	public static void controlarEstoqueProduto(Scanner scanner) {
