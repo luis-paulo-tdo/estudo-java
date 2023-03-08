@@ -469,3 +469,31 @@
 		- Fora do Pacote, só pode ser acessados por Subclasses da Classe.
 	-> Public: Podem ser acessados por todas as Classes do Módulo.
 		- Para usá-los em outros Módulos, é preciso importar o Módulo onde se encontram.
+
+-----
+
+10. Comportamento de Memória, Arrays e Listas
+
+10.1. Tipos Referência vs. Tipos Valor
+
+	=> Classes são Tipos Referência
+		-> Seus dados não são armazenados na Stack, mas sim na Heap de memória.
+		-> O que há na Stack é apenas um ponteiro que aponta para a Heap.
+		-> Quando uma variável de Classe recebe outra, o seu valor não muda.
+			- Sua referência apenas passa a apontar para o mesmo valor da outra.
+	=> Valor "null"
+		-> Referências aceitam "null" para indicar que não estão apontando para ninguém.
+	=> Os Tipos Valor são aqueles Tipos Primitivos cujos valores são armazenados em Stack.
+		-> Quando uma variável primitiva recebe outra, sua stack recebe uma cópia do valor.
+		-> Tipos Primitivos: boolean, char, double, float e int.
+	=> Valores Padrão
+		-> Quando alocamos 'new' em uma Classe, estes valores são atribuídos aos seus atributos.
+		-> Números: 0; Boolean: false; Char: Caractere 0; Objeto: null.
+	=> Enquanto Classes usam todos os recursos de OO, Primitivos são mais simples e performáticos.
+	=> Enquanto as variáveis de Classe são ponteiros, os Primitivos são valores.
+	=> Objetos precisam ser instanciados para serem usados, Primitivos já vêm prontos para uso.
+	=> Classes aceitam valor nulo, Primitivos não.
+	=> Atribuições em Classes alteram o ponteiro, em Primitivos o fazem receber uma cópia do valor.
+	=> Classes são instanciadas no Heap, Primitivos têm seus valores na Stack.
+	=> Primitivos só são válidos dentro de seu escopo de execução.
+		-> Objetos não utilizados são desalocados pelo Garbage Collector após um tempo.
