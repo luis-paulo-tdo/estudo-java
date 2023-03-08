@@ -433,3 +433,10 @@
 	-> Usos comuns: Iniciar valores dos atributos; injetar dependências e dados de entrada.
 	-> Se não for especificado, a Classe disponibiliza um Construtor Padrão.
 	-> É possível especificar mais de um Construtor (Sobrecarga de Construtor).
+
+9.2. A Palavra this
+
+	-> É uma referência para o próprio objeto.
+	-> Usos comuns:
+		- Diferenciar atributos de variáveis locais.
+		- Passar a si próprio como argumento em uma chamada de método dentro da Classe.
