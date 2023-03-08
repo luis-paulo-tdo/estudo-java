@@ -25,10 +25,8 @@ public class Program {
 		String name = scanner.next();
 		System.out.print("Preço: ");
 		double price = scanner.nextDouble();
-		System.out.print("Quantidade: ");
-		int quantity = scanner.nextInt();
 		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price);
 		
 		System.out.println();
 		System.out.println("Dados do Produto\n" + product);

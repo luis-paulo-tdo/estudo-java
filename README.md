@@ -440,3 +440,8 @@
 	-> Usos comuns:
 		- Diferenciar atributos de variáveis locais.
 		- Passar a si próprio como argumento em uma chamada de método dentro da Classe.
+
+9.3. Sobrecarga
+
+	-> Recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome.
+	-> Operações sobrecarregadas devem ter argumentos e/ou retorno diferentes.
