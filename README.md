@@ -445,3 +445,11 @@
 
 	-> Recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome.
 	-> Operações sobrecarregadas devem ter argumentos e/ou retorno diferentes.
+
+9.4. Encapsulamento
+
+	-> Princípio que consiste em esconder detalhes de uma Classe.
+	-> São expostas apenas operações seguras e que mantenham a consistência do objeto.
+	-> É obrigação da Classe manter a consistência do objeto, ou seja, seus atributos válidos.
+	-> Nenhum atributo deve ser exposto (em vez de 'public', devem ser 'private').
+		- Conforme o padrão JavaBeans, devem ser acessados por meio dos métodos get e set.

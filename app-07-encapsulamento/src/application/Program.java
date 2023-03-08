@@ -19,30 +19,28 @@ public class Program {
 	
 	public static void controlarEstoqueProduto(Scanner scanner) {
 		
+		Product product = new Product();
+		
 		System.out.println("Iniciando programa controle de estoque de um Produto.");
 		System.out.println("Insira os dados do produto.");
 		System.out.print("Nome: ");
-		String name = scanner.next();
+		product.setName(scanner.next());
 		System.out.print("Preço: ");
-		double price = scanner.nextDouble();
-		
-		Product product = new Product(name, price);
+		product.setPrice(scanner.nextDouble());
 		
 		System.out.println();
 		System.out.println("Dados do Produto\n" + product);
 		
 		System.out.println();
 		System.out.print("Digite o número de produtos adicionados em estoque: ");
-		int newQuantity = scanner.nextInt();
-		product.addProducts(newQuantity);
+		product.addProducts(scanner.nextInt());
 		
 		System.out.println();
 		System.out.println("Dados Atualizados do Produto\n" + product);
 		
 		System.out.println();
 		System.out.print("Digite o número de produtos para serem removidos do estoque: ");
-		newQuantity = scanner.nextInt();
-		product.removeProducts(newQuantity);
+		product.removeProducts(scanner.nextInt());
 		
 		System.out.println();
 		System.out.println("Dados Atualizados do Produto\n" + product);
