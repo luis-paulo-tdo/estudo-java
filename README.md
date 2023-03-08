@@ -505,3 +505,12 @@
 	-> Sua atuação no Heap é eliminar as alocações de valores que não estão sendo mais apontados.
 	-> Escopo Local é um bloco de código onde um conjunto de variáveis foram declaradas.
 	-> Quando o bloco de execução for finalizado, as variáveis são desalocadas automaticamente.
+
+10.3. Vetores
+
+	-> Em programação, "Vetor" é o nome dado a arranjos (Array) unidimensionais.
+	-> Array é uma estrutura de dados que guarda um conjunto de valores homogêneos, do mesmo tipo.
+		- Ordenada, onde os elementos são acessados por meio de posições.
+		- Alocada de uma vez só na memória, em bloco contíguo.
+	-> Vantagem: Acesso imediato aos elementos pela sua posição.
+	-> Desvantagens: Tamanho fixo e dificuldade para se inserir e remover dados.
