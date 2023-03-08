@@ -21,18 +21,16 @@ public class Program {
 	
 	public static void criarEsfera(Scanner scanner) {
 		
-		Calculator calculator = new Calculator();
-		
 		System.out.println("Iniciando programa de criação de esferas a partir de um raio.");
 		System.out.print("Digite o número do raio: ");
 		double radius = scanner.nextDouble();
-		double circumference = calculator.circumference(radius);
-		double volume = calculator.volume(radius);
+		double circumference = Calculator.circumference(radius);
+		double volume = Calculator.volume(radius);
 		
 		System.out.println("\nMedidas da Esfera:");
 		System.out.printf("Circunferência: %.2f", circumference);
 		System.out.printf("\nVolume: %.2f", volume);
-		System.out.printf("\nPI: %.2f", calculator.PI);
+		System.out.printf("\nPI: %.2f", Calculator.PI);
 	}
 	
 	public static void controlarEstoqueProduto(Scanner scanner) {

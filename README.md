@@ -418,5 +418,7 @@
 	-> Muito aplicado em Constantes e Classes Utilitárias.
 	-> Uma Classe que possui somente membros estáticos pode ser uma Classe Estática.
 	-> Uma Classe Estática não pode ser instanciada.
-	-> No Java, as constantes são declaradas com a palavra "final", indicando que ele não vai mudar.
+	-> No Java, declaram-se constantes com a palavra "final", indicando que não mudará.
 	-> Dentro de uma Classe Estática, não é possível chamar métodos que não sejam Estáticos.
+	-> Os membros estáticos são aqueles que não variam de acordo com a instância.
+		- Logo, não dependem de objetos para serem executados.
