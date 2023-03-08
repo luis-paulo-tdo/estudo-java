@@ -453,3 +453,19 @@
 	-> É obrigação da Classe manter a consistência do objeto, ou seja, seus atributos válidos.
 	-> Nenhum atributo deve ser exposto (em vez de 'public', devem ser 'private').
 		- Conforme o padrão JavaBeans, devem ser acessados por meio dos métodos get e set.
+
+9.5. Gerando automaticamente Construtores, Getters e Setters com o Eclipse
+
+	=> Botão Direito na Clase -> Source -> Generate Constructors using Fields
+	=> Botão Direito na Clase -> Source -> Generate Getters and Setters
+
+9.6. Modificadores de Acesso
+
+	-> São definidos na declaração de atributo das Classes.
+	-> Private: Atributos só podem ser acessados na própria Classe.
+	-> (Nada): Atributos só podem ser acessados dentro do mesmo Pacote.
+	-> Protected:
+		- Podem ser acessados no mesmo Pacote.
+		- Fora do Pacote, só pode ser acessados por Subclasses da Classe.
+	-> Public: Podem ser acessados por todas as Classes do Módulo.
+		- Para usá-los em outros Módulos, é preciso importar o Módulo onde se encontram.
