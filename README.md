@@ -422,3 +422,14 @@
 	-> Dentro de uma Classe Estática, não é possível chamar métodos que não sejam Estáticos.
 	-> Os membros estáticos são aqueles que não variam de acordo com a instância.
 		- Logo, não dependem de objetos para serem executados.
+
+-----
+
+9. Construtores, Palavra this, Sobrecarga e Encapsulamento
+
+9.1. Construtores
+
+	-> Uma operação especial da Clase que é executada no momento da instanciação do objeto.
+	-> Usos comuns: Iniciar valores dos atributos; injetar dependências e dados de entrada.
+	-> Se não for especificado, a Classe disponibiliza um Construtor Padrão.
+	-> É possível especificar mais de um Construtor (Sobrecarga de Construtor).
