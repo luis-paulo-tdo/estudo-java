@@ -497,3 +497,11 @@
 	=> Classes são instanciadas no Heap, Primitivos têm seus valores na Stack.
 	=> Primitivos só são válidos dentro de seu escopo de execução.
 		-> Objetos não utilizados são desalocados pelo Garbage Collector após um tempo.
+
+10.2. Desalocação de Memória - Garbage Collector e Escopo Local
+
+	-> O Garbage Collector é um processo que automatiza o gerenciamento de memória de um programa.
+	-> Ele monitora as alocações dinâmicas para desalocar objetos que não estão sendo usados.
+	-> Sua atuação no Heap é eliminar as alocações de valores que não estão sendo mais apontados.
+	-> Escopo Local é um bloco de código onde um conjunto de variáveis foram declaradas.
+	-> Quando o bloco de execução for finalizado, as variáveis são desalocadas automaticamente.
