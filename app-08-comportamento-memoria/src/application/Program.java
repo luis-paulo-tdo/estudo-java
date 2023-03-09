@@ -3,14 +3,52 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Product;
+
 public class Program {
 
+	public static Scanner scanner;
+	
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		
-		System.out.println("Iniciando programa de cálculo de média artmética de alturas.");
+		calcularMediaPrecos();
+		
+		scanner.close();
+	}
+	
+	public static void calcularMediaPrecos() {
+		System.out.println("Iniciando programa de cálculo de média aritmética de preços de um conjunto de produtos.");
+		System.out.print("Digite a quantidade de preços que você deseja calcular a média: ");
+		int quantidade = scanner.nextInt();
+		Product[] produtos = new Product[quantidade];
+		
+		for (int i = 0; i < produtos.length; ++i) {
+			
+			scanner.nextLine();
+			System.out.printf("\nDigite os dados do Produto #%d%n", i + 1);
+			
+			System.out.print("Nome: ");
+			String nome = scanner.next();
+			System.out.print("Preço: R$");
+			double preco = scanner.nextDouble();
+			
+			produtos[i] = new Product(nome, preco);
+		}
+		
+		double somatorio = 0.0;
+		for (int i = 0; i < produtos.length; ++i) {
+			somatorio += produtos[i].getPrice();
+		}
+		
+		double media = somatorio / quantidade;
+		System.out.printf("\nMédia dos preços: R$%.2f", media);
+	}
+
+	public static void calcularMediaAlturas() {
+		System.out.println("Iniciando programa de cálculo de média aritmética de alturas.");
 		System.out.print("Digite a quantidade de alturas que você deseja calcular a média: ");
 		int quantidade = scanner.nextInt();
 		double[] alturas = new double[quantidade];
@@ -27,8 +65,5 @@ public class Program {
 		
 		double media = somatorio / quantidade;
 		System.out.printf("Média das alturas: %.2f", media);
-		
-		scanner.close();
 	}
-
 }

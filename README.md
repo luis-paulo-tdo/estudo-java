@@ -514,3 +514,5 @@
 		- Alocada de uma vez só na memória, em bloco contíguo.
 	-> Vantagem: Acesso imediato aos elementos pela sua posição.
 	-> Desvantagens: Tamanho fixo e dificuldade para se inserir e remover dados.
+	-> Também é possível ter um Array de Objetos.
+	-> Um Array possui um atributo length, que nos permite identificar o tamanho do Array.
