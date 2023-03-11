@@ -523,3 +523,7 @@
 	-> Unboxing: Conversão de um objeto do Tipo Referência para um Tipo Valor compatível.
 	-> Wrapper Classes: São equivalentes aos Tipos Primitivos.
 		- Vantagens: Aceitam valor null e usufruem dos recursos da Orientação a Objetos.
+
+10.5. Laço For Each
+
+	-> Sintaxe opcional e simplificada para percorrer coleções.

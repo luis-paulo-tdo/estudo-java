@@ -14,12 +14,28 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		scanner = new Scanner(System.in);
 		
-		boxingUnboxingWrapper();
+		forEach();
 		
 		scanner.close();
 	}
 	
+	public static void forEach() {
+		
+		// Sintaxe For Each
+		
+		System.out.println("Percorrendo Arrays com o For Each.");
+		String[] vetorForEach = new String[] { "Maria", "Bob", "Alex" };
+		
+		int numeroForEach = 1;
+		for (String item : vetorForEach) {
+			System.out.println("Item #" + numeroForEach + ": " + item);
+			numeroForEach++;
+		}
+	}
+	
 	public static void boxingUnboxingWrapper() {
+		
+		// Conversão de Tipos Primitivos em Tipos Referência e vice-versa
 		
 		int numeroBoxing = 20;
 		Object objetoBoxing = numeroBoxing;
@@ -30,6 +46,9 @@ public class Program {
 	}
 	
 	public static void calcularMediaPrecos() {
+		
+		// Array de Tipos Referência
+		
 		System.out.println("Iniciando programa de cálculo de média aritmética de preços de um conjunto de produtos.");
 		System.out.print("Digite a quantidade de preços que você deseja calcular a média: ");
 		int quantidade = scanner.nextInt();
@@ -58,6 +77,9 @@ public class Program {
 	}
 
 	public static void calcularMediaAlturas() {
+		
+		// Array de Tipos Primitivos
+		
 		System.out.println("Iniciando programa de cálculo de média aritmética de alturas.");
 		System.out.print("Digite a quantidade de alturas que você deseja calcular a média: ");
 		int quantidade = scanner.nextInt();
