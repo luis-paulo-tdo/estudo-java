@@ -14,9 +14,19 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		scanner = new Scanner(System.in);
 		
-		calcularMediaPrecos();
+		boxingUnboxingWrapper();
 		
 		scanner.close();
+	}
+	
+	public static void boxingUnboxingWrapper() {
+		
+		int numeroBoxing = 20;
+		Object objetoBoxing = numeroBoxing;
+		System.out.println("Valor de um inteiro encaixotado: " + objetoBoxing);
+		
+		int numeroUnboxing = (int) objetoBoxing;
+		System.out.println("Valor de um inteiro desencaixotado: " + numeroUnboxing);
 	}
 	
 	public static void calcularMediaPrecos() {

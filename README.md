@@ -516,3 +516,10 @@
 	-> Desvantagens: Tamanho fixo e dificuldade para se inserir e remover dados.
 	-> Também é possível ter um Array de Objetos.
 	-> Um Array possui um atributo length, que nos permite identificar o tamanho do Array.
+
+10.4. Boxing, Unboxing e Wrapper Classes
+
+	-> Boxing: Conversão de um objeto do Tipo Valor para um objeto do Tipo Referência compatível.
+	-> Unboxing: Conversão de um objeto do Tipo Referência para um Tipo Valor compatível.
+	-> Wrapper Classes: São equivalentes aos Tipos Primitivos.
+		- Vantagens: Aceitam valor null e usufruem dos recursos da Orientação a Objetos.
