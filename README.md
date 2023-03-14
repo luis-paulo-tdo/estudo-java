@@ -563,3 +563,19 @@
 	-> São Arrays bidimensionais. Um Array de Arrays.
 	-> int[][] matriz = new int[tamanhoX][tamanhoY]
 
+-----
+	
+11. Tópicos Especiais em Java: Data-Hora
+
+11.1. Introdução à Data-Hora e Duração
+
+	-> Data Local
+		- Ano, Mês e Dia sem fuso horário.
+		- Hora é opcional.
+		- Usar quando não for importante para pessoas de outro fuso horário.
+	-> Data-Hora Global
+		- Ano, Mês, Dia e Hora com fuso horário.
+		- 2022-07-23T14:30:00Z (Onde Z é o fuso horário de Londres).
+		- Usar quando for importante para pessoas de outro fuso horário.
+	-> Duração
+		- Tempo decorrido entre duas Data-Hora.
