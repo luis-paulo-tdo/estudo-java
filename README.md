@@ -411,13 +411,16 @@
 		- hashCode	Retorna um código hash do objeto.
 		- toString	Converte o objeto para uma String.
 		
-8.6. Membros Estáticos
+8.6. Membros Estáticos - Conceitos Gerais
 
 	-> Também chamados de membros de Classe, em oposição aos membros de instância.
 	-> Não precisam de objetos para serem chamados, apenas da Classe.
 	-> Muito aplicado em Constantes e Classes Utilitárias.
 	-> Uma Classe que possui somente membros estáticos pode ser uma Classe Estática.
 	-> Uma Classe Estática não pode ser instanciada.
+	
+8.7. Membros Estáticos - Aplicação no Java
+
 	-> No Java, declaram-se constantes com a palavra "final", indicando que não mudará.
 	-> Dentro de uma Classe Estática, não é possível chamar métodos que não sejam Estáticos.
 	-> Os membros estáticos são aqueles que não variam de acordo com a instância.
@@ -506,7 +509,7 @@
 	-> Escopo Local é um bloco de código onde um conjunto de variáveis foram declaradas.
 	-> Quando o bloco de execução for finalizado, as variáveis são desalocadas automaticamente.
 
-10.3. Vetores
+10.3. Vetores - Conceitos
 
 	-> Em programação, "Vetor" é o nome dado a arranjos (Array) unidimensionais.
 	-> Array é uma estrutura de dados que guarda um conjunto de valores homogêneos, do mesmo tipo.
@@ -514,16 +517,43 @@
 		- Alocada de uma vez só na memória, em bloco contíguo.
 	-> Vantagem: Acesso imediato aos elementos pela sua posição.
 	-> Desvantagens: Tamanho fixo e dificuldade para se inserir e remover dados.
+	
+10.4. Vetores - Aplicação na Orientação a Objetos
+
 	-> Também é possível ter um Array de Objetos.
 	-> Um Array possui um atributo length, que nos permite identificar o tamanho do Array.
 
-10.4. Boxing, Unboxing e Wrapper Classes
+10.5. Boxing, Unboxing e Wrapper Classes
 
 	-> Boxing: Conversão de um objeto do Tipo Valor para um objeto do Tipo Referência compatível.
 	-> Unboxing: Conversão de um objeto do Tipo Referência para um Tipo Valor compatível.
 	-> Wrapper Classes: São equivalentes aos Tipos Primitivos.
 		- Vantagens: Aceitam valor null e usufruem dos recursos da Orientação a Objetos.
 
-10.5. Laço For Each
+10.6. Laço For Each
 
 	-> Sintaxe opcional e simplificada para percorrer coleções.
+
+10.7. Listas - Conceitos
+
+	-> Estrutura de dados homogênea, ou seja, comporta dados do mesmo Tipo.
+	-> Ordenadas: Elementos acessados por meio de posições.
+	-> Inicia vazia. Seus elementos são colocados sob demanda.
+	-> Cada elemento ocupa um nodo (nó) da lista.
+	-> Supertipo: List. Subtipos: ArrayList, LinkedList, etc.
+	-> Vantagens: Tamanho dinâmico e facilidade de inserções e remoções.
+	-> Desvantagens: Acesso sequencial aos elementos.
+
+10.8. Listas - Aplicações no Java
+
+		-> Como a Lista é representada por uma Classe no Java, ela pode conter funções.
+			- Obter tamanho da lista: 			size()
+			- Inserir elemento na lista: 		add(obj)
+			- Remover elemento da lista:		remove(obj), remove(int), removeIf(predicado)
+			- Encontrar posição de elemento:	indexOf(obj), lastIndexOf(obj)
+			- Filtrar lista por predicado:		stream().filter(x -> x == 4).collect(Collectors.toList())
+			- Encontrar primeira ocorrência:	stream().filter(x -> x == 4).findFirst().orElse(null)
+		-> O objeto List não pode ser de Tipos Primitivos. São usadas as Classes Wrappers.
+		-> Utiliza o conceito de Generics, que é a parametrização de tipos de objetos.
+		-> É necesário instanciá-la, mas não pode ser com o tipo abstrato List:
+			- A classe ArrayList usa o melhor das Listas e dos Arrays.
