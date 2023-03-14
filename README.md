@@ -557,3 +557,9 @@
 		-> Utiliza o conceito de Generics, que é a parametrização de tipos de objetos.
 		-> É necesário instanciá-la, mas não pode ser com o tipo abstrato List:
 			- A classe ArrayList usa o melhor das Listas e dos Arrays.
+
+10.9. Matrizes
+
+	-> São Arrays bidimensionais. Um Array de Arrays.
+	-> int[][] matriz = new int[tamanhoX][tamanhoY]
+

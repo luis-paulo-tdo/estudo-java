@@ -17,9 +17,54 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		scanner = new Scanner(System.in);
 		
-		listas();
+		matrizes();
 		
 		scanner.close();
+	}
+	
+	public static void matrizes() {
+		
+		System.out.println("Manipulando Matrizes no Java.");
+		System.out.print("Digite o tamanho cúbico da matriz: ");
+		
+		int tamanho = scanner.nextInt();
+		int[][] matriz = new int[tamanho][tamanho];
+		
+		System.out.println();
+		for (int i = 0; i < matriz.length; ++i) {
+			for (int j = 0; j < matriz[i].length; ++j) {
+				System.out.printf("Digite o valor da linha %d e colunca %d: ", i, j);
+				matriz[i][j] = scanner.nextInt();
+			}
+		}
+		
+		System.out.println();
+		System.out.println("Estrutura da Matriz:");
+		for (int i = 0; i < matriz.length; ++i) {
+			System.out.print("|\t");
+			for (int j = 0; j < matriz[i].length; ++j) {
+				System.out.print(matriz[i][j] + "\t");
+			}
+			System.out.print("|\n");
+		}
+		
+		System.out.println();
+		System.out.print("Números da diagonal principal: ");
+		for (int i = 0; i < matriz.length; ++i) {
+			System.out.print(matriz[i][i] + "\t");
+		}
+		
+		System.out.println();
+		System.out.print("Quantidade de números negativos: ");
+		int quantidadeNegativos = 0;
+		for (int i = 0; i < matriz.length; ++i) {
+			for (int j = 0; j < matriz[i].length; ++j) {
+				if (matriz[i][j] < 0) {
+					quantidadeNegativos++;
+				}
+			}
+		}
+		System.out.print(quantidadeNegativos);
 	}
 	
 	public static void listas() {
