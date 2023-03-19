@@ -579,3 +579,15 @@
 		- Usar quando for importante para pessoas de outro fuso horário.
 	-> Duração
 		- Tempo decorrido entre duas Data-Hora.
+
+11.2. Entendendo Timezone (Fuso Horário)
+
+	-> GMT (Greenwich Mean Time ~ Tempo Médio de Greenwich)
+		- Horário de Londes, é o marco zero dos horários
+		- Horário do padrão UTC - Coordinated Universal Time
+		- Também chamado de "Z Time" ou Zulu Time.
+	-> Os outros fuso horários são relativos ao GMT/UTC:
+		- São Paulo: GMT -3
+		- Manaus: GMT -4
+		- Portugal: GMT +1
+	-> Muitas linguagens usma nomes para Timezones: US/Pacific, America/Sao_Paulo, etc.
