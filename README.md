@@ -599,3 +599,13 @@
 	-> Data-[Hora] Global:
 		- 2022-07-23T14:52:09.254935Z
 		- 2022-07-23T14:52:09-03:00
+
+11.4. Operações importantes com Data-Hora
+
+	-> Instanciação:
+		- Data-Hora atual, texto ISO 8601, formato customizado
+		- Dia, mês, ano, [horário]
+	-> Formatação.
+	-> Obter dados de uma Data-Hora Local.
+	-> Converter Data-Hora Global para Local.
+	-> Cálculos com Data-Hora: Duração, Adição, etc.
