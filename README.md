@@ -591,3 +591,11 @@
 		- Manaus: GMT -4
 		- Portugal: GMT +1
 	-> Muitas linguagens usma nomes para Timezones: US/Pacific, America/Sao_Paulo, etc.
+	
+11.3. Padrão ISO 8601
+
+	-> Especifica como as Datas-Horas devem ser representadas em forma de texto.
+	-> Data-[Hora] Local: 2022-07-21T14:52:09.4073
+	-> Data-[Hora] Global:
+		- 2022-07-23T14:52:09.254935Z
+		- 2022-07-23T14:52:09-03:00
