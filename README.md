@@ -609,3 +609,11 @@
 	-> Obter dados de uma Data-Hora Local.
 	-> Converter Data-Hora Global para Local.
 	-> Cálculos com Data-Hora: Duração, Adição, etc.
+
+11.5. Instanciando Data-Hora em Java
+
+	-> Data-Hora Local: LocalDate e LocalDateTime
+	-> Data-Hora Global: InstantTime
+	-> Duração: Duration
+	-> Outros: ZoneId e ChronoUnit
+
