@@ -616,4 +616,10 @@
 	-> Data-Hora Global: InstantTime
 	-> Duração: Duration
 	-> Outros: ZoneId e ChronoUnit
+	-> Formatos Customizados: DateTimeFormatter
+	
+11.6. Convertendo Data-Hora para Texto
 
+	-> Uso do DateTimeFormatter para formatar Data-Hora para Texto.
+	-> Uso do withZone(ZoneId.systemDefault()) para formatar no fuso da máquina.
+	-> Uso do DateFormatter.ISO_DATE_TIME e DateFormatter.ISO_INSTANT para formatos ISO 8601.

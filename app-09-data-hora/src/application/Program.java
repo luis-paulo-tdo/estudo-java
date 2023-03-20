@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
@@ -13,6 +14,27 @@ public class Program {
 public static Scanner scanner;
 	
 	public static void main(String[] args) throws ParseException {
+		
+		instanciarDataHora();
+		converterDataHoraParaTexto();
+	}
+	
+	private static void converterDataHoraParaTexto() {
+		
+		LocalDate dataLocalConversao = LocalDate.parse("2022-07-20");
+		LocalDateTime dataHoraLocalConversao = LocalDateTime.parse("2022-07-20T01:30:26");
+		Instant dataHoraGlobalConversao = Instant.parse("2022-07-20T01:30:26Z");
+		
+		System.out.println("Impressão de Datas-Horas convertidas para Texto");
+		System.out.println("Data Local:\t\t\t\t" + dataLocalConversao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+		System.out.println("Data-Hora Local:\t\t\t" + dataHoraLocalConversao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
+		System.out.println("Data-Hora Local (ISO_DATE_TIME):\t" + dataHoraLocalConversao.format(DateTimeFormatter.ISO_DATE_TIME));
+		System.out.println("Data-Hora Global:\t\t\t" + DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault()).format(dataHoraGlobalConversao));
+		System.out.println("Data-Hora Global (ISO_INSTANT):\t\t" + DateTimeFormatter.ISO_INSTANT.format(dataHoraGlobalConversao));
+		System.out.println("Data-Hora Global toString():\t\t" + dataHoraGlobalConversao.toString());
+	}
+	
+	private static void instanciarDataHora() throws ParseException {
 		
 		LocalDate dataLocalInstancia = LocalDate.now();
 		LocalDateTime dataHoraLocalInstancia = LocalDateTime.now();
@@ -41,5 +63,6 @@ public static Scanner scanner;
 		System.out.println("Data-Hora Local Formatada:\t\t\t" + dataHoraLocalFormatada);
 		System.out.println("Data Local Ano-Mês-Dia:\t\t\t\t" + dataLocalAnoMesDia);
 		System.out.println("Data-Hora Local Ano-Mês-Dia-Hora-Minuto:\t" + dataHoraLocalAnoMesDia);
+		System.out.println();
 	}
 }
