@@ -623,3 +623,11 @@
 	-> Uso do DateTimeFormatter para formatar Data-Hora para Texto.
 	-> Uso do withZone(ZoneId.systemDefault()) para formatar no fuso da máquina.
 	-> Uso do DateFormatter.ISO_DATE_TIME e DateFormatter.ISO_INSTANT para formatos ISO 8601.
+
+11.7. Convertendo Data-Hora Global para Local
+
+	-> O Timezone sempre deve ser informado.
+	-> A conversão pode ser para o horário local da máquina ou para qualquer outro.
+	-> O método ZoneId.getAvailableZoneIds() retorna uma coleção de Timezones possíveis.
+	-> Uso do LocalDate.ofInstant(Instant, ZoneId) para conversão.
+	-> Existem outros métodos capazes de recuperar dados de uma data (Dia, Mês, Ano, etc.)

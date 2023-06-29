@@ -17,6 +17,44 @@ public static Scanner scanner;
 		
 		instanciarDataHora();
 		converterDataHoraParaTexto();
+		converterDataHoraGlobalParaLocal();
+	}
+	
+	private static void converterDataHoraGlobalParaLocal() {
+		
+		LocalDate dataLocalConversao = LocalDate.parse("2022-07-20");
+		LocalDateTime dataHoraLocalConversao = LocalDateTime.parse("2022-07-20T01:30:26");
+		Instant dataHoraGlobalConversao = Instant.parse("2022-07-20T01:30:26Z");
+		
+		System.out.println("\tImpressão de Datas-Horas convertidas para Texto");
+		for (String zoneId : ZoneId.getAvailableZoneIds()) {
+			System.out.println("\t\t" + zoneId);
+		}
+		System.out.println();
+		
+		System.out.println("Impressão de Datas-Horas Globais convertidas para Locais");
+		System.out.println("Data-Hora Global a se converter:\t" + dataHoraGlobalConversao);
+		LocalDate dataConvertida = LocalDate.ofInstant(dataHoraGlobalConversao, ZoneId.systemDefault());
+		LocalDate dataPortugalConvertida = LocalDate.ofInstant(dataHoraGlobalConversao, ZoneId.of("Portugal"));
+		LocalDateTime dataHoraConvertida = LocalDateTime.ofInstant(dataHoraGlobalConversao, ZoneId.systemDefault());
+		LocalDateTime dataHoraPortugalConvertida = LocalDateTime.ofInstant(dataHoraGlobalConversao, ZoneId.of("Portugal"));
+		System.out.println("Data Local Convertida:\t\t\t" + dataConvertida);
+		System.out.println("Data Local de Portugal Convertida:\t" + dataPortugalConvertida);
+		System.out.println("Data-Hora Local Convertida:\t\t" + dataHoraConvertida);
+		System.out.println("Data-Hora Local de Portugal Convertida:\t" + dataHoraPortugalConvertida);
+		System.out.println();
+		
+		System.out.println("Obtendo dados da Data:\t" + dataLocalConversao);
+		System.out.println("Dia do Mês:\t\t" + dataLocalConversao.getDayOfMonth());
+		System.out.println("Mês:\t\t\t" + dataLocalConversao.getMonthValue());
+		System.out.println("Ano:\t\t\t" + dataLocalConversao.getYear());
+		System.out.println();
+		
+		System.out.println("Obtendo dados da Data-Hora:\t" + dataHoraLocalConversao);
+		System.out.println("Hora:\t\t\t\t" + dataHoraLocalConversao.getHour());
+		System.out.println("Minuto:\t\t\t\t" + dataHoraLocalConversao.getMinute());
+		
+		System.out.println();
 	}
 	
 	private static void converterDataHoraParaTexto() {
@@ -32,6 +70,7 @@ public static Scanner scanner;
 		System.out.println("Data-Hora Global:\t\t\t" + DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault()).format(dataHoraGlobalConversao));
 		System.out.println("Data-Hora Global (ISO_INSTANT):\t\t" + DateTimeFormatter.ISO_INSTANT.format(dataHoraGlobalConversao));
 		System.out.println("Data-Hora Global toString():\t\t" + dataHoraGlobalConversao.toString());
+		System.out.println();
 	}
 	
 	private static void instanciarDataHora() throws ParseException {
