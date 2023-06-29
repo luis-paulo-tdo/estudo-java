@@ -644,3 +644,24 @@
 		- No caso de LocalDate, é preciso converter para LocalDateTime.
 		- No caso de Instant, a maior data deve vir primeiro.
 	-> É possível converter LocalDate para LocalDateTime com o LocalDate.atStartOfDay().
+
+11.9. Trabalhando com o Date
+
+	=> É o tipo mais clássico de armazenamento de datas no Java. Representa um INSTANTE.
+	=> Pertence ao pacote java.util.
+	=> Armazena o número de mílissegundos desde a meia noite do dia 01/01/1970 GMT (UTC).
+		-> GMT: Greenwich Mean Time (Time Zone).
+		-> UTC: Coordinated Universal Time (Time Standard).
+	=> O padrão ISO 8601 é o mais utilizado para se trabalhar com datas em formato de texto.
+		-> O armazenamento será sempre seguindo o padrão UTC.
+		-> Ao converter em texto, usa-se este formato: yyyy-MM-ddTHH:mm:ssZ.
+	=> A classe Instant também pode ser usada a partir do Java 8.
+	=> Podemos usar a classe SimpleDateFormat para trabalhar com conversão de Date para String.
+		-> Define-se o formato da data seguindo o padrão 8601 na instanciação.
+		-> A data é definida em formato padrão: Thu Jun 25 15:42:07 BRT 20218.
+		-> Para obter o formato definido na instanciação: sdf.format(Date). 
+		-> Também é possível configurar o Timezone: sdf.setTimeZone().
+	=> Para se ter a data atual, basta instanciar Date sem passar nada.
+		-> Também é possível passar milissegundos por parâmetro, acrescentando à data inicial.
+		-> Ao atribuir 0 milissegundos, a data é a inicial corrigida pelo fuso.
+			- No caso do Brasil: 01/01/1969 21:00 GMT (UTC). Três horas a menos.

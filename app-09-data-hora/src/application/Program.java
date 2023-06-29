@@ -9,7 +9,9 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.Date;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class Program {
 
@@ -21,6 +23,53 @@ public static Scanner scanner;
 		converterDataHoraParaTexto();
 		converterDataHoraGlobalParaLocal();
 		calcularDataHora();
+		manipularDate();
+	}
+	
+	private static void manipularDate() throws ParseException {
+		
+		SimpleDateFormat sdfData = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdfDataHora = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		SimpleDateFormat sdfGmt = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		sdfGmt.setTimeZone(TimeZone.getTimeZone("GMT"));
+		
+		Date dateAtual = new Date();
+		Date dateAtualMilissegundos = new Date(System.currentTimeMillis());
+		Date dateInicial = new Date(0L);
+		Date dateInicialAposCincoHoras = new Date(1000 * 60 * 60 * 5);
+		Date dateData = sdfData.parse("25/06/2018");
+		Date dateDataHora = sdfDataHora.parse("25/06/2018 15:42:07");
+		Date dateISO8601 = Date.from(Instant.parse("2018-06-25T15:42:07Z"));
+		
+		System.out.println("Trabalhando com Date");
+		System.out.println("Data atual com SimpleDateFormat:\t\t\t" + sdfDataHora.format(dateAtual));
+		System.out.println("Data atual em milissegundos com SimpleDateFormat:\t" + sdfDataHora.format(dateAtualMilissegundos));
+		System.out.println("Data inicial com SimpleDateFormat:\t\t\t" + sdfDataHora.format(dateInicial));
+		System.out.println("Data inicial após cinco horas com SimpleDateFormat:\t" + sdfDataHora.format(dateInicialAposCincoHoras));
+		System.out.println("Data \"dd/MM/yyyy\" com SimpleDateFormat:\t\t\t" + sdfData.format(dateData));
+		System.out.println("Data \"dd/MM/yyyy HH:mm:ss\" com SimpleDateFormat:\t" + sdfDataHora.format(dateDataHora));
+		System.out.println("Data ISO8601 com SimpleDateFormat:\t\t\t" + sdfDataHora.format(dateISO8601));
+		System.out.println();
+		
+		System.out.println("Trabalhando com Date em UTC");
+		System.out.println("Data atual com SimpleDateFormat:\t\t\t" + sdfGmt.format(dateAtual));
+		System.out.println("Data atual em milissegundos com SimpleDateFormat:\t" + sdfGmt.format(dateAtualMilissegundos));
+		System.out.println("Data inicial com SimpleDateFormat:\t\t\t" + sdfGmt.format(dateInicial));
+		System.out.println("Data inicial após cinco horas com SimpleDateFormat:\t" + sdfGmt.format(dateInicialAposCincoHoras));
+		System.out.println("Data \"dd/MM/yyyy\" com SimpleDateFormat:\t\t\t" + sdfGmt.format(dateData));
+		System.out.println("Data \"dd/MM/yyyy HH:mm:ss\" com SimpleDateFormat:\t" + sdfGmt.format(dateDataHora));
+		System.out.println("Data ISO8601 com SimpleDateFormat:\t\t\t" + sdfGmt.format(dateISO8601));
+		System.out.println();
+		
+		System.out.println("Trabalhando com Date sem SimpleDateFormat");
+		System.out.println("Data atual com SimpleDateFormat:\t\t\t" + dateAtual);
+		System.out.println("Data atual em milissegundos com SimpleDateFormat:\t" + dateAtualMilissegundos);
+		System.out.println("Data inicial com SimpleDateFormat:\t\t\t" + dateInicial);
+		System.out.println("Data inicial após cinco horas com SimpleDateFormat:\t" + dateInicialAposCincoHoras);
+		System.out.println("Data \"dd/MM/yyyy\" com SimpleDateFormat:\t\t\t" + dateData);
+		System.out.println("Data \"dd/MM/yyyy HH:mm:ss\" com SimpleDateFormat:\t" + dateDataHora);
+		System.out.println("Data ISO8601 com SimpleDateFormat:\t\t\t" + dateISO8601);
+		System.out.println();
 	}
 	
 	private static void calcularDataHora() {
