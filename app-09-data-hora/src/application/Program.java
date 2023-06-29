@@ -2,11 +2,13 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Program {
@@ -18,6 +20,54 @@ public static Scanner scanner;
 		instanciarDataHora();
 		converterDataHoraParaTexto();
 		converterDataHoraGlobalParaLocal();
+		calcularDataHora();
+	}
+	
+	private static void calcularDataHora() {
+		
+		LocalDate dataLocal = LocalDate.parse("2022-07-20");
+		LocalDateTime dataHoraLocal = LocalDateTime.parse("2022-07-20T01:30:26");
+		Instant dataHoraGlobal = Instant.parse("2022-07-20T01:30:26Z");
+		
+		LocalDate dataSemanaPassada = dataLocal.minusDays(7);
+		LocalDate dataProximaSemana = dataLocal.plusDays(7);
+		LocalDate dataAposSeteAnos = dataLocal.plusYears(7);
+		
+		LocalDateTime dataHoraSemanaPassada = dataHoraLocal.minusDays(7);
+		LocalDateTime dataHoraProximaSemana = dataHoraLocal.plusDays(7);
+		LocalDateTime dataHoraAposSeteAnos = dataHoraLocal.plusYears(7);
+		
+		Instant dataHoraGlobalSemanaPassada = dataHoraGlobal.minus(7, ChronoUnit.DAYS);
+		Instant dataHoraGlobalProximaSemana = dataHoraGlobal.plus(7,  ChronoUnit.DAYS);
+		Instant dataHoraGlobalAposSeteAnos = dataHoraGlobal.plus(7 * 365, ChronoUnit.DAYS);
+		
+		Duration duracaoDataSeteDias = Duration.between(dataSemanaPassada.atStartOfDay(), dataLocal.atStartOfDay());
+		Duration duracaoDataHoraSeteDias = Duration.between(dataHoraSemanaPassada, dataHoraLocal);
+		Duration duracaoDataHoraGlobalSeteDias = Duration.between(dataHoraGlobal, dataHoraGlobalProximaSemana);
+		
+		System.out.println("Cálculo de Data");
+		System.out.println("Semana anterior a " + dataLocal + ":\t\t\t" + dataSemanaPassada);
+		System.out.println("Semana posterior a " + dataLocal + ":\t\t\t" + dataProximaSemana);
+		System.out.println("Sete anos após " + dataLocal + ":\t\t\t" + dataAposSeteAnos);
+		System.out.println();
+		
+		System.out.println("Cálculo de Data-Hora");
+		System.out.println("Semana anterior a " + dataHoraLocal + ":\t\t" + dataHoraSemanaPassada);
+		System.out.println("Semana posterior a " + dataHoraLocal + ":\t\t" + dataHoraProximaSemana);
+		System.out.println("Sete anos após " + dataHoraLocal + ":\t\t" + dataHoraAposSeteAnos);
+		System.out.println();
+		
+		System.out.println("Cálculo de Data-Hora Global");
+		System.out.println("Semana anterior a " + dataHoraGlobal + ":\t\t" + dataHoraGlobalSemanaPassada);
+		System.out.println("Semana posterior a " + dataHoraGlobal + ":\t" + dataHoraGlobalProximaSemana);
+		System.out.println("Sete anos após " + dataHoraGlobal + ":\t\t" + dataHoraGlobalAposSeteAnos);
+		System.out.println();
+		
+		System.out.println("Cálculo de Durações");
+		System.out.println("Duração entre " + dataSemanaPassada + " e " + dataLocal + " é de:\t\t\t" + duracaoDataSeteDias.toDays() + " Dias");
+		System.out.println("Duração entre " + dataHoraSemanaPassada + " e " + dataHoraLocal + " é de:\t" + duracaoDataHoraSeteDias.toDays() + " Dias");
+		System.out.println("Duração entre " + dataHoraGlobalProximaSemana + " e " + dataHoraGlobal + " é de:\t" + duracaoDataHoraGlobalSeteDias.toDays() + " Dias");
+		System.out.println();
 	}
 	
 	private static void converterDataHoraGlobalParaLocal() {

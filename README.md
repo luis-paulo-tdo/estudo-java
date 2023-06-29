@@ -631,3 +631,16 @@
 	-> O método ZoneId.getAvailableZoneIds() retorna uma coleção de Timezones possíveis.
 	-> Uso do LocalDate.ofInstant(Instant, ZoneId) para conversão.
 	-> Existem outros métodos capazes de recuperar dados de uma data (Dia, Mês, Ano, etc.)
+
+11.8. Cálculos com Data-Hora
+
+	-> Data-Hora são objetos imutáveis. Você não muda ele.
+	-> Em vez disso, cria-se um novo objeto Data-Hora com o resultado calculado.
+	-> Por meio de métodos, é possível adicionar dias, meses, anos, horas, etc.
+		- plusDays(1), minusWeeks(2), plusYears(7).
+	-> Para Data-Hora Global, há os métodos plus() e minus():
+		- Passa-se a quantidade e a unidade de tempo a ser adicionada/subtraída.
+	-> É possível calcular a duração através do método Duration.between().
+		- No caso de LocalDate, é preciso converter para LocalDateTime.
+		- No caso de Instant, a maior data deve vir primeiro.
+	-> É possível converter LocalDate para LocalDateTime com o LocalDate.atStartOfDay().
