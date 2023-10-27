@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.TimeZone;
@@ -24,6 +25,27 @@ public static Scanner scanner;
 		converterDataHoraGlobalParaLocal();
 		calcularDataHora();
 		manipularDate();
+		manipularCalendar();
+	}
+	
+	private static void manipularCalendar() {
+		
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy  HH:mm:ss");
+		Date dateSimple = Date.from(Instant.parse("2023-10-26T17:35:24Z"));
+		
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(dateSimple);
+		calendar.add(Calendar.HOUR_OF_DAY, 4);
+		Date dateCalendar = calendar.getTime();
+		int minutes = calendar.get(Calendar.MINUTE);
+		int month = 1 + calendar.get(Calendar.MONTH);
+		
+		System.out.println("Trabalhando com Calendar");
+		System.out.println("Data Simple:\t\t" + simpleDateFormat.format(dateSimple));
+		System.out.println("Data Calendar:\t\t" + simpleDateFormat.format(dateCalendar));
+		System.out.println("Data Calendar Minutes:\t" + minutes);
+		System.out.println("Data Calendar Month:\t" + month);
+		System.out.println();
 	}
 	
 	private static void manipularDate() throws ParseException {
