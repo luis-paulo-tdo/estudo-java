@@ -665,3 +665,10 @@
 		-> Também é possível passar milissegundos por parâmetro, acrescentando à data inicial.
 		-> Ao atribuir 0 milissegundos, a data é a inicial corrigida pelo fuso.
 			- No caso do Brasil: 01/01/1969 21:00 GMT (UTC). Três horas a menos.
+
+11.10. Manipulando um Date com Calendar
+
+	-> É uma forma mais clássica e antiga de se manipular datas.
+	-> Com ela, é possível fazer operações com datas.
+	-> Além disso, é possível pegar partes destas datas:
+		- Quantidade de minutos ou número do mês, por exemplo.		
